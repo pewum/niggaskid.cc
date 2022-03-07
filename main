@@ -1,0 +1,50 @@
+local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))()
+
+--ss:Button("name pls",function()
+--   
+--end)
+
+
+
+
+local s = VLib:Window("NIGGERSKID.CC", "beam niggas down", "N")
+
+local ss = s:Tab("Aimlock")
+
+ss:Button("Main Aimlock",function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/pewum/danslock/main/script"))()
+end)
+
+local ss = s:Tab("Main")
+
+ss:Button("Fly (X)",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/sUA9m6M6"))()
+end)
+
+
+-- [Shotgun] - $1250
+-- 20 [Shotgun Ammo] - $60
+
+-- [Revolver] - $1300
+-- 12 [Revolver Ammo] - $75
+
+-- [Double-Barrel SG] - $1400
+-- [Double-Barrel SG Ammo] - $60
+
+ss:Dropdown("Buy Gun",{"[Revolver] - $1300", "[Shotgun] - $1250", "[Double-Barrel SG] - $1400"},function(t)
+    local a = t local b=game.Workspace.Ignored.Shop[a]local c=game:GetService'Players'.LocalPlayer.Character.HumanoidRootPart.Position;game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=b.Head.CFrame+Vector3.new(0,3,0)wait(0.5)fireclickdetector(game.Workspace.Ignored.Shop[a].ClickDetector)fireclickdetector(game.Workspace.Ignored.Shop[a].ClickDetector)game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(c)
+    wait(0.5)
+end)
+
+ss:Dropdown("Buy Ammo",{"12 [Revolver Ammo] - $75", "20 [Shotgun Ammo] - $60", "[Double-Barrel SG Ammo] - $60"},function(t)
+    local Ammount = 5
+    
+    while Ammount > 0 do
+    local a = t local b=game.Workspace.Ignored.Shop[a]local c=game:GetService'Players'.LocalPlayer.Character.HumanoidRootPart.Position;game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=b.Head.CFrame+Vector3.new(0,3,0)wait(0.5)fireclickdetector(game.Workspace.Ignored.Shop[a].ClickDetector)fireclickdetector(game.Workspace.Ignored.Shop[a].ClickDetector)game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(c)
+    wait(0.5)
+    Ammount = Ammount - 1
+    end 
+
+end)
+
+

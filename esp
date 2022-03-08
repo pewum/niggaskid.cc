@@ -6,9 +6,9 @@
 --                         |___/    --
 -- -----------------------------------
 -- -----------------------------------
-								ALLYCOLOR = {0,0,0}  	--//Color of the ESP  of people on the same team
+								ALLYCOLOR = {255,0,255}  	--//Color of the ESP  of people on the same team
 								ENEMYCOLOR =  {255,0,255} 	--//Color of the ESP  of people on NOT the same team
-								TRANSPARENCY = 0.2			--//Transparency of the ESP
+								TRANSPARENCY = 0.7			--//Transparency of the ESP
 								HEALTHBAR_ACTIVATED = true 	--//Renders the Healthbar
 --
 --

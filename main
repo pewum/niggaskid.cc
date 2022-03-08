@@ -1,19 +1,26 @@
 local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))()
 
+
+local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
+CoreGui:SetCore("SendNotification", {
+    -- Customizable
+    Title = "niggerskid.cc",
+    Text = "niggerskid.cc made by zarko#8941",
+    Duration = 3, 
+
+})
 --ss:Button("name pls",function()
 --   
 --end)
-
-
-
 
 local s = VLib:Window("NIGGERSKID.CC", "beam niggas down", "N")
 
 local ss = s:Tab("Aimlock")
 
-ss:Button("Main Aimlock",function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/pewum/danslock/main/script"))()
+ss:Button("Main Aimlock (C to lock)",function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/pewum/danslock/main/obfuscated%20loadstring"))()
 end)
+
 
 local ss = s:Tab("Main")
 
@@ -46,5 +53,4 @@ ss:Dropdown("Buy Ammo",{"12 [Revolver Ammo] - $75", "20 [Shotgun Ammo] - $60", "
     end 
 
 end)
-
 
